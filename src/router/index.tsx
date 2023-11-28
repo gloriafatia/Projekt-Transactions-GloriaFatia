@@ -17,32 +17,32 @@ const Router = () =>
     {
       path: "/",
       element: (
-        <PublicGuard>
+        <PrivateGuard>
           <PublicLayout>
             <DashboardPage />
           </PublicLayout>
-        </PublicGuard>
+        </PrivateGuard>
       ),
       index: true,
     },
     {
       path: "UserManagement",
       element: (
-        <PublicGuard>
+        <PrivateGuard>
           <PublicLayout>
             <UserManagement />
           </PublicLayout>
-        </PublicGuard>
+        </PrivateGuard>
       ),
     },
     {
       path: "Transactions",
       element: (
-        <PublicGuard>
+        <PrivateGuard>
           <PublicLayout>
             <Transactions />
           </PublicLayout>
-        </PublicGuard>
+        </PrivateGuard>
       ),
     },
     {
