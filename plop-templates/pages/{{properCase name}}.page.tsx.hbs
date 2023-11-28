@@ -1,0 +1,13 @@
+import React, {FunctionComponent} from 'react';
+
+import styles from "./{{properCase name}}.module.scss"
+
+export interface {{properCase name}}Props {}
+
+export const {{pascalCase name}}: FunctionComponent<{{properCase name}}Props> = () => {
+  return (
+    <div className={ styles.{{camelCase name}}Wrapper }>
+      <h2>{{pascalCase name}} page</h2>
+    </div>
+  );
+};

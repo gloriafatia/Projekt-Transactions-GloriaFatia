@@ -1,0 +1,8 @@
+import { HttpClient } from '../http-client'
+import { {{properCase name}} } from './{{properCase name}}.types'
+
+class {{properCase name}}Client {
+  get{{properCase name}} = async () => await HttpClient.get<{{properCase name}}>('/{{properCase name}}')
+}
+
+export default new {{properCase name}}Client()

@@ -1,0 +1,21 @@
+import { createContext, FunctionComponent, ReactNode, useEffect, useMemo, useState } from 'react'
+
+interface {{properCase name}}ProviderProps {
+  children: ReactNode
+}
+
+interface {{properCase name}}ContextType {}
+
+const initialState: {{properCase name}}ContextType = {}
+
+const {{properCase name}}Context = createContext(initialState)
+
+const AuthProvider: FunctionComponent<{{properCase name}}ProviderProps> = ({ children }) => {
+  return (
+    <{{properCase name}}Context.Provider value={ {...initialState} }>
+      {children}
+    </{{properCase name}}Context.Provider>
+  )
+}
+
+export { {{properCase name}}Context, {{properCase name}}Provider }
